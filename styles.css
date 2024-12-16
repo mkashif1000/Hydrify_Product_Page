@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6rem;
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 6rem;
+}
+
+.logo p {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.btn button {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+    border-radius: 1rem;
+    letter-spacing: 1.5px;
+}
+
+.heroSection {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.text {
+    width: 40%;
+    animation: slide-in2 2s;
+}
+
+.image {
+    width: 40%;
+    animation: slide-in 2s;
+}
+.image img {
+    height: 80vmin;
+}
+
+.text h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.colorSection {
+    height: 90vmin;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.sliderSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10rem;
+}
+
+.CSimage img {
+    height: 70vmin;
+}
+
+.CSheading h1 {
+    font-weight: 100;
+}
+
+.CSslider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 1rem;
+    border: 8px solid transparent;
+}
+
+.slider1 {
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(to right, orange, yellow);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.slider2 {
+    border: 8px solid transparent;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(to right, gray, black);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.slider3 {
+    border: 8px solid transparent;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(to right, rgb(64, 64, 134), rgb(68, 68, 218));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.slider:hover {
+    border: 8px solid black;
+}
+
+
+.reviewSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.rBoxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 50vmin;
+    margin-right: 50vmin;
+    gap: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.rBox {
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: black;
+    border-radius: 3rem;
+}
+
+.rBox img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+footer {
+    height: 12rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10rem;
+}
+
+.flogo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.flogo p {
+    transform: rotate(-90deg);
+}
+
+.fmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem; 
+}
+
+.fmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+@keyframes slide-in {
+    from {
+      translate: 70vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+}
+
+@keyframes slide-in2 {
+    from {
+      translate: 0 70vw;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+}
